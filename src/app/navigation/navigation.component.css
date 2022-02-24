@@ -45,9 +45,11 @@ ul li a:hover {
 @media (max-width: 640px) {
     .main-nav {
         flex-direction: row;
-        justify-content: flex-start;
-        height: 70px ;
+        justify-content: space-around;
+        align-items: center;
+        height:8vh ;
         width: 100vw;
+        margin-bottom: 3vh;
     }
 
     ul {
@@ -59,7 +61,6 @@ ul li a:hover {
     }
     
     ul li {
-        margin-right: 5px;
         height: 100%;
     }
   }

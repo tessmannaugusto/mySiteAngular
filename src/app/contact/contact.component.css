@@ -5,4 +5,75 @@
     border-radius: 5px;
     color: white;
     font-size: 0.80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMedia-contact{
+    width: 50vw;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+ul li i{
+    color: white;
+    transition: all ease 0.3s;
+}
+
+ul li i:hover {
+    color: rgb(255, 144, 40);
+}
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:25vw;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid grey; }
+
+textarea {
+  height: 20vh;
+  line-height: 150%;
+  resize:none;
+}
+
+[type="submit"] {
+  width: 25vw;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:18px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+@media (max-width: 640px) {
+    .main-contact {
+        height: auto;
+    }
 }
