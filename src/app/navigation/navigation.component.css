@@ -1,0 +1,65 @@
+.main-nav {
+    background-color: rgb(175, 172, 172);
+    color: var(--main-letter-color);
+    height: 40vh;
+    width: 8vh;
+    min-width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 2vh;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul li {
+    width: 100%;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(247, 247, 242);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+ul li a:hover {
+    color: rgb(255, 144, 40);
+}
+
+@media (max-width: 640px) {
+    .main-nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 70px ;
+        width: 100vw;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    ul li {
+        margin-right: 5px;
+        height: 100%;
+    }
+  }
