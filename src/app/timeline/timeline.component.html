@@ -1,4 +1,20 @@
 <div class="main-timeline">
-    <p>timeline works!</p>
+    <div class="timeline-container">
+        <ul>
+            <li (click)="toggleFirstDate()">1992</li>
+            <li (click)="toggleSecondDate()">2009</li>
+            <li (click)="toggleThirdtDate()">2015</li>
+            <li (click)="toggleFourthDate()">2017</li>
+            <li (click)="toggleFifthDate()">2021</li>
+        </ul>
+    </div>
+    <div class="details-container">
+        <p *ngIf="showFirstDate">1992 details</p>
+        <p *ngIf="showSecondDate">2009 details</p>
+        <p *ngIf="showThirdDate">2015 details</p>
+        <p *ngIf="showFourthDate">2017 details</p>
+        <p *ngIf="showFifthDate">2021 details</p>
+    </div>
+    
 </div>
 

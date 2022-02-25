@@ -31,7 +31,10 @@ ul li i:hover {
     color: rgb(255, 144, 40);
 }
 
-form { max-width:420px; margin:50px auto; }
+form { 
+    max-width:420px;
+    margin:50px auto;
+}
 
 .feedback-input {
   color:white;
@@ -49,11 +52,12 @@ form { max-width:420px; margin:50px auto; }
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid grey; }
+.feedback-input:focus {
+    border:2px solid grey;
+ }
 
 textarea {
   height: 20vh;
-  line-height: 150%;
   resize:none;
 }
 
@@ -71,6 +75,8 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+
 
 @media (max-width: 640px) {
     .main-contact {
