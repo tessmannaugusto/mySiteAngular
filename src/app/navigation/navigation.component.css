@@ -47,17 +47,16 @@ ul li a:hover {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        height:8vh ;
+        height:8vh;
         width: 100vw;
         margin-bottom: 3vh;
+        font-size: 1rem;
     }
 
-    ul {
+    .main-nav ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
+        padding-top: 3vh;
     }
     
     ul li {

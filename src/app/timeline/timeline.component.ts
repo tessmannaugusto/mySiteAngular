@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css']
+  styleUrls: ['./timeline.component.css'],
 })
 export class TimelineComponent implements OnInit {
 
@@ -18,24 +19,37 @@ export class TimelineComponent implements OnInit {
   showFourthDate = false;
   showFifthDate = false;
 
-  toggleFirstDate(){
-    this.showFirstDate = !this.showFirstDate;
+  toggleDetails(date: Number){
+    if(date == 1){
+      this.showFirstDate = !this.showFirstDate;
+      this.showSecondDate = false;
+      this.showThirdDate = false;
+      this.showFourthDate = false;
+      this.showFifthDate = false;
+    }else if(date == 2){
+      this.showSecondDate = !this.showSecondDate;
+      this.showFirstDate = false;
+      this.showThirdDate = false;
+      this.showFourthDate = false;
+      this.showFifthDate = false;
+    }else if(date == 3){
+      this.showThirdDate = !this.showThirdDate;
+      this.showFirstDate = false;
+      this.showSecondDate = false;
+      this.showFourthDate = false;
+      this.showFifthDate = false;
+    }else if(date == 4){
+      this.showFourthDate = !this.showFourthDate;
+      this.showFirstDate = false;
+      this.showThirdDate = false;
+      this.showSecondDate = false;
+      this.showFifthDate = false;
+    }else{
+      this.showFifthDate = !this.showFifthDate;
+      this.showFirstDate = false;
+      this.showThirdDate = false;
+      this.showFourthDate = false;
+      this.showSecondDate = false;
+    }
   }
-
-  toggleSecondDate(){
-    this.showSecondDate = !this.showSecondDate;
-  }
-
-  toggleThirdtDate(){
-    this.showThirdDate = !this.showThirdDate;
-  }
-
-  toggleFourthDate(){
-    this.showFourthDate = !this.showFourthDate;
-  }
-
-  toggleFifthDate(){
-    this.showFifthDate = !this.showFifthDate;
-  }
-
 }
