@@ -4,5 +4,11 @@
         <li><a routerLink="/timeline"><mat-icon>timelapse</mat-icon></a></li>
         <li><a routerLink="/about">about</a></li>
         <li><a routerLink="/contact"><mat-icon>contact_mail</mat-icon></a></li>
+        <li>
+            <select #selectedLang (change)="switchLanguage(selectedLang.value)">
+                <option *ngFor="let language of translate.getLangs()" 
+                [value]="language" [selected]="language == translate.currentLang">{{language}}</option>
+            </select>
+        </li>
     </ul>
 </nav>
