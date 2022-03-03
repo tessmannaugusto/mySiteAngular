@@ -10,8 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import {TranslateHttpLoader} from "@ngx-translate/http-loader";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { HttpClient, HttpClientModule} from "@angular/common/http";
 
 
 

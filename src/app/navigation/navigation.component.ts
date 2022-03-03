@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavigationComponent implements OnInit {
 
   constructor(public translate: TranslateService) {
-    translate.addLangs(['en', 'es']);
+    translate.addLangs(['en', 'es', 'pt']);
     translate.setDefaultLang('en')
    }
 
